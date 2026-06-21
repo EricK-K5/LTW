@@ -7,19 +7,30 @@ require_once __DIR__ . '/../controllers/NoteController.php';
 require_once __DIR__ . '/../controllers/CategoryController.php';
 
 $page = $_GET['page'] ?? 'notes_list';
+<<<<<<< HEAD
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+=======
+>>>>>>> 319bea0672a1ca1eb809b3398801d803f4ac906f
 
 switch ($page) {
 	// Auth
 	case 'login':
+<<<<<<< HEAD
 		if ($method === 'POST') {
+=======
+		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+>>>>>>> 319bea0672a1ca1eb809b3398801d803f4ac906f
 			AuthController::login();
 		} else {
 			AuthController::showLogin();
 		}
 		break;
 	case 'register':
+<<<<<<< HEAD
 		if ($method === 'POST') {
+=======
+		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+>>>>>>> 319bea0672a1ca1eb809b3398801d803f4ac906f
 			AuthController::register();
 		} else {
 			AuthController::showRegister();

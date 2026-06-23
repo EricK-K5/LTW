@@ -33,3 +33,5 @@ CREATE TABLE IF NOT EXISTS notes (
 	FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
 	FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL
 );
+
+select * from users;

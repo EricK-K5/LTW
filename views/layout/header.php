@@ -8,7 +8,7 @@ $currentUser = current_user();
 <head>
 	<meta charset="utf-8">
 	<title>Simple Notes App</title>
-	<base href="<?= htmlspecialchars((BASE_URL ?: '') . '/') ?>">
+	<base href="/LTW/">
 	<link rel="stylesheet" href="<?= htmlspecialchars((BASE_URL ?: '') . '/public/css/style.css') ?>">
 </head>
 <body>

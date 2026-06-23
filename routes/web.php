@@ -6,6 +6,7 @@ require_once __DIR__ . '/../controllers/AuthController.php';
 require_once __DIR__ . '/../controllers/NoteController.php';
 require_once __DIR__ . '/../controllers/CategoryController.php';
 
+
 $page = $_GET['page'] ?? 'notes_list';
 
 switch ($page) {
